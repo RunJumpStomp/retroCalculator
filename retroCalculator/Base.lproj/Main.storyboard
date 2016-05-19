@@ -50,11 +50,18 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-8j-igK">
-                                <rect key="frame" x="194" y="169" width="213" height="327"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="258" misplaced="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-8j-igK">
+                                <rect key="frame" x="193" y="169" width="213" height="393"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EjH-fS-5PQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dof-Hv-Xpk">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="Yja-Ea-vCb"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EjH-fS-5PQ">
+                                        <rect key="frame" x="0.0" y="66" width="213" height="63"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-XY-rbw">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="63"/>
@@ -92,7 +99,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="l9g-j0-PHH">
-                                        <rect key="frame" x="0.0" y="66" width="213" height="63"/>
+                                        <rect key="frame" x="0.0" y="132" width="213" height="63"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJE-xh-YSb">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="63"/>
@@ -130,7 +137,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-x2-Xtp">
-                                        <rect key="frame" x="0.0" y="132" width="213" height="63"/>
+                                        <rect key="frame" x="0.0" y="198" width="213" height="63"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHy-Vd-o5m">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="63"/>
@@ -168,7 +175,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="E33-mi-upA">
-                                        <rect key="frame" x="0.0" y="198" width="213" height="63"/>
+                                        <rect key="frame" x="0.0" y="264" width="213" height="63"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-UM-Lxf">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="63"/>
@@ -206,7 +213,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LN5-VU-biT">
-                                        <rect key="frame" x="0.0" y="264" width="213" height="63"/>
+                                        <rect key="frame" x="0.0" y="330" width="213" height="63"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXt-Nb-wA4">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="63"/>
@@ -257,20 +264,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="centerY" secondItem="l5s-Oo-TD9" secondAttribute="centerY" id="0Yf-dp-8Dx"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="top" secondItem="l5s-Oo-TD9" secondAttribute="top" id="1Lm-15-2QU"/>
                             <constraint firstItem="BaM-3Z-a8F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4bO-UO-MNJ"/>
                             <constraint firstItem="4ec-E4-5dp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Sq-SH-pDZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dkr-G7-krI" secondAttribute="bottom" id="AGs-Ih-SAo"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="centerY" secondItem="l5s-Oo-TD9" secondAttribute="centerY" id="D49-q2-O4h"/>
                             <constraint firstItem="I5a-8j-igK" firstAttribute="centerY" secondItem="l5s-Oo-TD9" secondAttribute="centerY" id="D4z-GI-6bD"/>
                             <constraint firstItem="BaM-3Z-a8F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVA-mW-ffK"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="leading" secondItem="l5s-Oo-TD9" secondAttribute="leading" id="Gbw-Uj-tgo"/>
                             <constraint firstItem="I5a-8j-igK" firstAttribute="centerX" secondItem="l5s-Oo-TD9" secondAttribute="centerX" id="Vaw-Ol-8lG"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="centerX" secondItem="l5s-Oo-TD9" secondAttribute="centerX" id="W0m-8G-NX5"/>
                             <constraint firstAttribute="trailing" secondItem="4ec-E4-5dp" secondAttribute="trailing" id="WGW-OJ-2vl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4ec-E4-5dp" secondAttribute="bottom" id="bdc-ZU-o5P"/>
                             <constraint firstItem="dkr-G7-krI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ciM-Z7-Jri"/>
                             <constraint firstItem="4ec-E4-5dp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="djd-XM-5PM"/>
                             <constraint firstItem="nMz-TR-1Ay" firstAttribute="top" secondItem="BaM-3Z-a8F" secondAttribute="top" constant="15" id="eFV-LL-lNd"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="bottom" secondItem="l5s-Oo-TD9" secondAttribute="bottom" id="gX5-xV-DKa"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="trailing" secondItem="l5s-Oo-TD9" secondAttribute="trailing" id="mSv-c3-G2l"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="top" secondItem="l5s-Oo-TD9" secondAttribute="top" id="qbv-WP-Y42"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="bottom" secondItem="l5s-Oo-TD9" secondAttribute="bottom" id="rIY-HY-nqt"/>
                             <constraint firstAttribute="trailing" secondItem="dkr-G7-krI" secondAttribute="trailing" id="uvr-fu-lNl"/>
                             <constraint firstItem="BaM-3Z-a8F" firstAttribute="trailing" secondItem="nMz-TR-1Ay" secondAttribute="trailing" constant="10" id="vtK-dq-3lN"/>
+                            <constraint firstItem="I5a-8j-igK" firstAttribute="centerX" secondItem="l5s-Oo-TD9" secondAttribute="centerX" id="zzv-OW-EmF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Lm-15-2QU"/>
+                                <exclude reference="D49-q2-O4h"/>
+                                <exclude reference="D4z-GI-6bD"/>
+                                <exclude reference="Gbw-Uj-tgo"/>
+                                <exclude reference="Vaw-Ol-8lG"/>
+                                <exclude reference="W0m-8G-NX5"/>
+                                <exclude reference="gX5-xV-DKa"/>
+                                <exclude reference="mSv-c3-G2l"/>
+                                <exclude reference="qbv-WP-Y42"/>
+                                <exclude reference="rIY-HY-nqt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="outputLbl" destination="nMz-TR-1Ay" id="Hj0-2f-Ir1"/>
@@ -294,6 +325,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
